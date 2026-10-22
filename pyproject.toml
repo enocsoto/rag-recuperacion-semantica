@@ -1,0 +1,22 @@
+[project]
+name = "rag-recuperacion-semantica"
+version = "0.1.0"
+description = "RAG local: ingesta por tokens, Chroma persistente y respuesta grounded."
+requires-python = ">=3.12"
+dependencies = [
+    "langchain",
+    "langchain-openai",
+    "langchain-anthropic",
+    "langchain-text-splitters",
+    "chromadb",
+    "pydantic",
+    "tiktoken",
+    "python-dotenv",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["memoria", "ingesta", "rag"]
